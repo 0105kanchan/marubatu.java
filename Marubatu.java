@@ -24,6 +24,8 @@ public static void main(String[] args) {
 
 	boolean repeat = true;
 	int m=0;
+	Scanner scanner = new Scanner(System.in);
+	
 	System.out.println("丸ばつゲームを始めます。");
 	System.out.println("横軸は左から右に0,1,2、縦軸は上から下に0,1,2となってます。 ");
 	System.out.println("０〜２の整数を２回入力してもらいます。");
@@ -36,7 +38,7 @@ public static void main(String[] args) {
 			a="✖︎";
 		}
 		System.out.println(a+"の番です。");
-		Scanner scanner = new Scanner(System.in);
+		
 		System.out.println("横軸の数字0~2を入力してください。");
 		int number1 = scanner.nextInt();
 		if(number1<0 | number1>2) {
